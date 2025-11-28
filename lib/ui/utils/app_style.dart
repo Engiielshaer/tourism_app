@@ -6,5 +6,8 @@ abstract class AppStyle {
   static const TextStyle subTitle= TextStyle(
       fontSize: 12, fontWeight: FontWeight.w400,color:Color(0xff111C2C));
 
+  static const TextStyle hintText= TextStyle(
+      fontSize: 16, fontWeight: FontWeight.w400,color:Color(0xffA1A8B2));
+
 
 }

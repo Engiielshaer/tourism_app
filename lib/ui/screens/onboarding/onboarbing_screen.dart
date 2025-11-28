@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tourism_task/ui/auth/signup/signUp_screen.dart';
 import 'package:tourism_task/ui/screens/onboarding/onboard_screens/screen1.dart';
 import 'package:tourism_task/ui/screens/onboarding/onboard_screens/screen2.dart';
 import 'package:tourism_task/ui/screens/onboarding/onboard_screens/screen3.dart';
@@ -29,11 +31,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             Screen3(controller: controller,)
           ],
         ),
-          Container(
-            alignment:Alignment(.9,-.87),
-            child: Text(
-              'Skip',
-              style: AppStyle.subTitle.copyWith(color: Color(0xffF4F5F6),
+          GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, SignUpScreen.routeName);
+            },
+            child: Container(
+              alignment:Alignment(.9,-.87),
+              child: Text(
+                'Skip',
+                style: AppStyle.subTitle.copyWith(color: Color(0xffF4F5F6),
+                ),
               ),
             ),
           )
