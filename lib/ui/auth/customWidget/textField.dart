@@ -20,8 +20,8 @@ class BuildTextField extends StatelessWidget {
         suffixIcon: icon !=null ? Icon(icon,color: Color(0xffA1A8B2),) : null ,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: Color(0xffA1A8B2)
+          borderSide: const BorderSide(
+            color: Color(0xffDADCE0)
           )
         )
       ),
